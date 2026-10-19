@@ -60,8 +60,3 @@ Metode lain (histogram equalization, Otsu) tersedia di `enhance.py` dan ikut dib
 | ijazah-8 | Normal / baik | Unsharp masking | 29,4 → 39,7 |
 | ijazah-9 | Gelap & kontras rendah | Gamma + contrast stretching | 19,5 → 40,1 |
 
-## Catatan penting
-- **Urutan citra.** `ijazah-1` sampai `ijazah-9` di sini mengikuti urutan halaman `IJAZAH_PCD.pdf`. Jika urutan di laporan Anda berbeda, ganti nama file di `data/` agar sesuai.
-- **Tidak semua kategori laporan terdeteksi.** Tabel laporan memuat 9 kategori (termasuk overexposed, uneven illumination, HE, Otsu untuk OCR). Pada 9 citra ini aturan otomatis hanya menemukan 4 kondisi. Jika dosen mengharuskan satu metode per baris tabel laporan, gunakan `--all_methods` dan pilih hasil yang sesuai, atau ubah fungsi `diagnose()`.
-- Ambang aturan dipilih dari 9 citra ini saja, jadi perlu disesuaikan untuk citra lain.
-- Ijazah memuat data pribadi: gunakan repositori **private**, atau tambahkan `data/` ke `.gitignore`.
